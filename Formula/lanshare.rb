@@ -5,21 +5,21 @@
 class Lanshare < Formula
   desc "Share files instantly over your local network with QR codes"
   homepage "https://github.com/sebaswvv/lan-share"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sebaswvv/lan-share/releases/download/v1.0.2/lan-share_1.0.2_darwin_amd64.tar.gz"
-      sha256 "148b5d06003e533507d7facf601447297b073d4c6a963dc2cc308004729dd5f9"
+      url "https://github.com/sebaswvv/lan-share/releases/download/v1.0.3/lan-share_1.0.3_darwin_amd64.tar.gz"
+      sha256 "aebee4e7b112edc0391fb50d51bb351c7afbd40b94c481f4e2224fe52f4a6d2a"
 
       def install
         bin.install "lanshare"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sebaswvv/lan-share/releases/download/v1.0.2/lan-share_1.0.2_darwin_arm64.tar.gz"
-      sha256 "c371158b5346c87bb50c4fa154ef8a441ff45083e888decb04ffe3f95afc086a"
+      url "https://github.com/sebaswvv/lan-share/releases/download/v1.0.3/lan-share_1.0.3_darwin_arm64.tar.gz"
+      sha256 "bdb2baa61d8addb8a96e14e6ffa59854615d77d57b651b522a33e289af9abed1"
 
       def install
         bin.install "lanshare"
@@ -29,15 +29,15 @@ class Lanshare < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sebaswvv/lan-share/releases/download/v1.0.2/lan-share_1.0.2_linux_amd64.tar.gz"
-      sha256 "e9991d0a1df60d858d6b1a0b2b88cf025a8c3151c13631fb9110c46d409d9792"
+      url "https://github.com/sebaswvv/lan-share/releases/download/v1.0.3/lan-share_1.0.3_linux_amd64.tar.gz"
+      sha256 "60bf07990cec124021e389e22bfdfc1c6ebb3efe1a77f2522a34dac18a430d27"
       def install
         bin.install "lanshare"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sebaswvv/lan-share/releases/download/v1.0.2/lan-share_1.0.2_linux_arm64.tar.gz"
-      sha256 "e3cd9d2e84209fff7505b92f0fee787ed9549163dac608a48218de0952ad4737"
+      url "https://github.com/sebaswvv/lan-share/releases/download/v1.0.3/lan-share_1.0.3_linux_arm64.tar.gz"
+      sha256 "26b527ed2281685060cd5d58731075b56707ebdc781ab3a01b01b0599e4a1cb5"
       def install
         bin.install "lanshare"
       end
